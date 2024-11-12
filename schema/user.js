@@ -2,20 +2,20 @@ import mongoose  from "mongoose";
 
 const userSchema = mongoose.Schema({
     complaintno :{type:String},
-    name: { type: String, required: true },
-  dob: { type: String, required: true },
-  pan: { type: String, required: true ,},
-  accountNumber: { type: String, required: true},
-  ifsc: { type: String, required: true },
-  phone: { type: String, required: true },
-  password: { type: String, required: true,unique:true },
+    name: { type: String },
+  dob: { type: String },
+  pan: { type: String},
+  accountNumber: { type: String},
+  ifsc: { type: String },
+  phone: { type: String },
+  password: { type: String },
 
   // Investment Details
-  investedInMutualFund: { type: Number,  },
-  investedInEquityFund: { type: Number, },
-  consolidatedFundValue: { type: Number, },
-  commissionDue: { type: Number,  },
-  commissionRealised: { type: Number,  },
+  investedInMutualFund: { type: String,  },
+  investedInEquityFund: { type: String, },
+  consolidatedFundValue: { type: String, },
+  commissionDue: { type: String,  },
+  commissionRealised: { type: String,  },
 
   // Assigned Officer
   assignedOfficerName: { type: String,  },
